@@ -17,7 +17,7 @@ soup = BeautifulSoup(page)
 element = soup.select("div cite")
 
 element = map(lambda x: str(x.text),element)
-imdbLinks = filter(lambda x: len(x.split('/'))==4 and x.split('.')[1]=='imdb' and x.endswith('/'),element)
+imdbLinks = filter(lambda x: len(x.split('/'))==4 and x.split('.')[1]=='imdb' and x.split('/')[1]=='title' and x.endswith('/'),element)
 
 print str(len(imdbLinks))+" result(s) fetched"
 
