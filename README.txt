@@ -5,9 +5,10 @@ Dependencies:
 3.Requests module
 
 The script will find all movies that have the specified keyword(input) and returns you 
-->Movie Name
+->Movie Name along with year
 ->Rating
-->Genre.
+->Genre
+->Cast
 
 ---------------------------------------------------------------
 
